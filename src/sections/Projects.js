@@ -4,7 +4,6 @@ import { useInView } from 'react-intersection-observer';
 
 // WEB DESIGN imports (from figma folder)
 import LuxyArchitectureImg from '../assets/projects/figma/Luxy Architecture/luxuryarcweb.webp';
-import ClothingBrandImg from '../assets/projects/figma/Clothing Brand/clothingweb.jpg';
 
 // MOBILE imports (from figma folder)
 import FarmMobileUIImg from '../assets/projects/figma/Farm Mobile UI/farmmobile.jpg';
