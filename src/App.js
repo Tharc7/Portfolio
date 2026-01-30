@@ -68,7 +68,6 @@ function App() {
         ) : (
           <>
             <Hero />
-            <SectionDivider />
             <About />
             <SectionDivider />
             <Skills />

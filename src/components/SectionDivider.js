@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const SectionDivider = () => {
   return (
-    <div className="relative w-full h-20 overflow-hidden bg-black">
+    <div className="relative w-full h-10 md:h-12 overflow-hidden bg-black">
       {/* Animated Diagonal Line Pattern */}
       <motion.div
         className="absolute inset-0 opacity-20"

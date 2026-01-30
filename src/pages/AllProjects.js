@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AnimatedBackground from '../components/AnimatedBackground';
 // Figma Projects - WEB DESIGN
 import CameraWebUIImg from '../assets/projects/figma/Camera Web UI/cameraweb.avif';
 import ClothingBrandImg from '../assets/projects/figma/Clothing Brand/clothingweb.jpg';
@@ -240,15 +239,15 @@ const AllProjects = ({ onBack }) => {
           href={project.url}
           target="_blank"
           rel="noreferrer"
-          className="group relative bg-white/5 rounded-3xl overflow-hidden border border-white/10 backdrop-blur-xl w-full"
+          className="group relative bg-white/5 rounded-3xl overflow-hidden border border-indigo-400/20 backdrop-blur-xl w-full"
           initial={{
-            borderColor: 'rgba(255, 255, 255, 0.1)',
+            borderColor: 'rgba(129, 140, 248, 0.3)',
           }}
           whileHover={{
             y: -18,
             scale: 1.02,
-            borderColor: 'rgba(255, 255, 255, 0.4)',
-            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+            borderColor: 'rgba(129, 140, 248, 0.7)',
+            backgroundColor: 'rgba(15, 23, 42, 0.7)',
           }}
           transition={{ type: 'spring', stiffness: 320, damping: 28 }}
         >
@@ -267,7 +266,7 @@ const AllProjects = ({ onBack }) => {
               className="absolute top-4 right-4"
               whileHover={{ scale: 1.08 }}
             >
-              <span className="px-3 py-1 text-xs font-medium bg-black/70 text-white rounded-full backdrop-blur-sm border border-white/20">
+              <span className="px-3 py-1 text-xs font-medium rounded-full backdrop-blur-sm border border-indigo-400/40 bg-indigo-500/20 text-indigo-100">
                 {project.category}
               </span>
             </motion.div>
@@ -296,21 +295,21 @@ const AllProjects = ({ onBack }) => {
                 →
               </motion.div>
             </div>
-            <p className="text-white/50 mb-6 text-sm sm:text-base leading-[1.7] font-extralight tracking-wide">
+            <p className="text-white/60 mb-6 text-sm sm:text-base leading-[1.7] font-extralight tracking-wide">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <motion.span
                   key={tag}
-                  className="px-3 py-1.5 text-xs font-light bg-white/10 text-white/80 rounded-full border border-white/10 tracking-wide"
+                  className="px-3 py-1.5 text-xs font-light bg-indigo-500/10 text-indigo-100 rounded-full border border-indigo-400/30 tracking-wide"
                   initial={{
-                    borderColor: 'rgba(255, 255, 255, 0.1)',
+                    borderColor: 'rgba(129, 140, 248, 0.4)',
                   }}
                   whileHover={{
                     scale: 1.12,
-                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                    borderColor: 'rgba(255, 255, 255, 0.3)',
+                    backgroundColor: 'rgba(129, 140, 248, 0.25)',
+                    borderColor: 'rgba(129, 140, 248, 0.8)',
                     y: -1,
                   }}
                   transition={{ duration: 0.18 }}
@@ -327,31 +326,41 @@ const AllProjects = ({ onBack }) => {
 
   return (
     <section className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden">
+      {/* Animated Gradient Background (matching main Projects section style) */}
       <motion.div
-        className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        className="absolute inset-0"
+        animate={{
+          background: [
+            'radial-gradient(ellipse 60% 50% at 90% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 50%)',
+            'radial-gradient(ellipse 70% 60% at 10% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 50%)',
+            'radial-gradient(ellipse 60% 50% at 90% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 50%)',
+          ],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
       />
-      <AnimatedBackground variant="projects" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-14">
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.6, -0.05, 0.01, 0.99] }}
           >
-            <p className="text-xs font-extralight text-white/40 uppercase tracking-[0.3em] mb-4">
+            <p className="inline-block px-6 py-2 bg-indigo-500/10 border border-indigo-400/30 rounded-full text-xs font-light text-indigo-300 uppercase tracking-wider mb-4"
+            >
               Portfolio
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extralight text-white leading-tight tracking-[-0.02em]">
-              All Projects
-              <span className="block bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent font-extralight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-white leading-tight tracking-tight">
+              ALL PROJECTS
+              <span className="block bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent font-light">
                 Figma & WordPress
               </span>
             </h1>
-            <p className="text-white/55 mt-4 max-w-2xl font-extralight tracking-wide text-sm sm:text-base">
+            <p className="text-white/60 mt-4 max-w-2xl font-extralight tracking-wide text-sm sm:text-base">
               Every design and build collected in one place. Explore dedicated
               Figma prototypes and WordPress deliveries without losing the
               crafted aesthetic from the main experience.
@@ -361,16 +370,25 @@ const AllProjects = ({ onBack }) => {
           {onBack && (
             <motion.button
               onClick={onBack}
-              className="self-start px-6 py-3 rounded-full border border-white/20 bg-white/10 text-white font-light tracking-wide backdrop-blur-md hover:border-white/50 hover:bg-white/15 transition-all shadow-lg shadow-black/20"
-              whileHover={{ scale: 1.05, y: -4 }}
+              className="group relative self-start px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-light text-sm tracking-wide overflow-hidden rounded-full"
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.97 }}
+              style={{
+                boxShadow: '0 0 30px rgba(99, 102, 241, 0.4), 0 0 60px rgba(168, 85, 247, 0.3)',
+              }}
             >
-              ← Back to featured
+              <span className="relative z-10 flex items-center gap-2">
+                ← Back to featured
+              </span>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                style={{ filter: 'blur(20px)' }}
+              />
             </motion.button>
           )}
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-16">
           <div>
             <motion.div
               variants={sectionTitleVariants}
@@ -380,14 +398,14 @@ const AllProjects = ({ onBack }) => {
               className="flex items-center justify-between mb-8"
             >
               <div>
-                <p className="text-xs font-extralight text-white/40 uppercase tracking-[0.3em] mb-2">
+                <p className="text-xs font-extralight text-indigo-300 uppercase tracking-[0.3em] mb-1">
                   Design
                 </p>
-                <h2 className="text-2xl sm:text-3xl font-extralight text-white tracking-[-0.01em]">
+                <h2 className="text-2xl sm:text-3xl font-light text-white tracking-tight">
                   Figma Projects
                 </h2>
               </div>
-              <span className="px-4 py-2 text-xs font-medium bg-white/10 text-white rounded-full border border-white/10">
+              <span className="px-4 py-2 text-xs font-medium bg-indigo-500/10 text-indigo-100 rounded-full border border-indigo-400/30">
                 {figmaProjects.length} projects
               </span>
             </motion.div>
@@ -403,14 +421,14 @@ const AllProjects = ({ onBack }) => {
               className="flex items-center justify-between mb-8"
             >
               <div>
-                <p className="text-xs font-extralight text-white/40 uppercase tracking-[0.3em] mb-2">
+                <p className="text-xs font-extralight text-indigo-300 uppercase tracking-[0.3em] mb-1">
                   Build
                 </p>
-                <h2 className="text-2xl sm:text-3xl font-extralight text-white tracking-[-0.01em]">
+                <h2 className="text-2xl sm:text-3xl font-light text-white tracking-tight">
                   WordPress Projects
                 </h2>
               </div>
-              <span className="px-4 py-2 text-xs font-medium bg-white/10 text-white rounded-full border border-white/10">
+              <span className="px-4 py-2 text-xs font-medium bg-indigo-500/10 text-indigo-100 rounded-full border border-indigo-400/30">
                 {wordpressProjects.length} projects
               </span>
             </motion.div>

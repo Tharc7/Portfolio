@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   const [displayedName, setDisplayedName] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const fullName = 'Tharsika Loganathan';
+  const fullName = 'Tharshika Loganathan';
   const typingSpeed = 100; // milliseconds per character
   const startDelay = 800; // delay before typing starts (in ms)
 

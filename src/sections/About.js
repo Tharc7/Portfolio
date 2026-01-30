@@ -19,7 +19,7 @@ const About = () => {
     <section
       id="about"
       ref={inViewRef}
-      className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden"
+      className="relative pt-6 pb-10 md:pt-10 md:pb-16 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden"
     >
       {/* Animated Gradient Background */}
       <motion.div
@@ -88,7 +88,7 @@ const About = () => {
               <div className="relative h-full overflow-hidden rounded-lg group/image">
                 <motion.img
                   src={profileImage}
-                  alt="Tharsika Loganathan - UI/UX Designer"
+                  alt="Tharshika Loganathan - UI/UX Designer"
                   className="w-full h-full object-cover grayscale group-hover/image:grayscale-0"
                   style={{
                     transition: 'filter 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)',

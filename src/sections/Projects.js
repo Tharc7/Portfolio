@@ -88,7 +88,7 @@ const Projects = ({ onViewAll }) => {
     <section
       id="projects"
       ref={inViewRef}
-      className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden"
+      className="relative pt-10 pb-16 md:pt-12 md:pb-20 px-4 sm:px-6 lg:px-8 bg-black overflow-hidden"
     >
       {/* Animated Gradient Background */}
       <motion.div
@@ -249,7 +249,7 @@ const Projects = ({ onViewAll }) => {
             transition={{ delay: 0.8 }}
             whileHover={{ scale: 1.02, y: -4 }}
           >
-            <div className="relative flex-1 rounded-lg overflow-hidden border border-indigo-400/20 bg-white/5 backdrop-blur-sm min-h-[120px] max-h-[280px]">
+            <div className="relative h-72 md:h-80 rounded-lg overflow-hidden border border-indigo-400/20 bg-white/5 backdrop-blur-sm">
               <img
                 src={portfolioCategories[3].image}
                 alt={portfolioCategories[3].title}

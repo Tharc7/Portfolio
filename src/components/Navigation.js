@@ -55,7 +55,7 @@ const Navigation = ({ isAllProjectsPage = false, onNavigateHome }) => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="text-base sm:text-lg font-light tracking-wide text-white hover:text-white/90 transition-colors relative group"
           >
-            <span className="relative z-10">Tharsika Loganathan</span>
+            <span className="relative z-10">Tharshika Loganathan</span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white/80 transition-all group-hover:w-full" />
           </a>
 
@@ -75,7 +75,7 @@ const Navigation = ({ isAllProjectsPage = false, onNavigateHome }) => {
             {/* Resume Download Button */}
             <a
               href={resumePdf}
-              download="Tharsika-Resume.pdf"
+              download="Tharshika-Resume.pdf"
               className="relative px-4 py-2 border border-white/30 rounded-full text-white/90 hover:text-white hover:border-white/60 transition-all font-light tracking-wide text-xs uppercase group"
             >
               <span className="relative z-10 flex items-center gap-2">
@@ -145,7 +145,7 @@ const Navigation = ({ isAllProjectsPage = false, onNavigateHome }) => {
           {/* Resume Download Link for Mobile */}
           <a
             href={resumePdf}
-            download="Tharsika-Resume.pdf"
+            download="Tharshika-Resume.pdf"
             className="flex items-center gap-2 text-white/90 hover:text-white transition-colors py-2 border-t border-white/10 pt-4 mt-2"
             onClick={() => setIsMobileMenuOpen(false)}
           >
