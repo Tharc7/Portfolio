@@ -35,7 +35,7 @@ const Projects = ({ onViewAll }) => {
         { title: 'Luxy Architecture', url: 'https://www.behance.net/gallery/242984587/Luxy-Architecture-Web-UI' },
         { title: 'Clothing Brand', url: 'https://www.behance.net/gallery/243052229/Clothing-Brand' },
       ],
-      url: 'https://www.behance.net/logantharshi',
+      url: 'https://www.behance.net/gallery/242984587/Luxy-Architecture-Web-UI',
     },
     {
       id: 'mobile',
