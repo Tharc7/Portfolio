@@ -5,6 +5,7 @@ import SectionDivider from './components/SectionDivider';
 import ScrollProgress from './components/ScrollProgress';
 import Hero from './sections/Hero';
 import About from './sections/About';
+import Education from './sections/Education';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
@@ -69,6 +70,7 @@ function App() {
           <>
             <Hero />
             <About />
+            <Education />
             <SectionDivider />
             <Skills />
             <SectionDivider />

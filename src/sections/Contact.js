@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'react-hot-toast';
+import { FaBehance } from 'react-icons/fa';
 
 const Contact = () => {
   const [inViewRef, inView] = useInView({
@@ -85,7 +86,7 @@ const Contact = () => {
 
   const socialLinks = [
     { name: 'LinkedIn', icon: '💼', url: 'https://www.linkedin.com/in/tharshika-loganathan-735a992a4' },
-    { name: 'Behance', icon: '✨', url: 'https://www.behance.net/logantharshi' },
+    { name: 'Behance', icon: <FaBehance />, url: 'https://www.behance.net/logantharshi' },
     { name: 'Instagram', icon: '📷', url: 'https://www.instagram.com/snapshi_stories' },
   ];
 
@@ -231,7 +232,11 @@ const Contact = () => {
                       textShadow: '0 0 10px rgba(255, 255, 255, 0.1)',
                     }}
                   >
-                    <span className="text-xl">{social.icon}</span>
+                    {typeof social.icon === 'string' ? (
+                      <span className="text-xl">{social.icon}</span>
+                    ) : (
+                      <span className="text-xl text-white">{social.icon}</span>
+                    )}
                   </motion.a>
                 ))}
               </div>

@@ -10,7 +10,7 @@ const About = () => {
   });
 
   const stats = [
-    { number: '3+', label: 'Year Experience' },
+    { number: '5+', label: 'Year Experience' },
     { number: '50+', label: 'Projects' },
     { number: '100%', label: 'Satisfaction Rate' },
   ];
@@ -105,7 +105,7 @@ const About = () => {
                     UI/UX Designer
                   </div>
                   <div className="text-xs text-white/80 font-light" style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)' }}>
-                    Based in Sri Lanka
+                    Based in Dubai, UAE
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const About = () => {
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.7 }}
               >
-                As a UI/UX Designer specializing in user interface design for web and mobile applications, with additional expertise in WordPress development and product poster design.
+                I am a UI/UX Designer with 5 years of professional experience specializing in user interface design for web and mobile applications. Alongside UI/UX design, I have expertise in WordPress development and product poster design, enabling me to deliver complete and visually impactful digital solutions. Over the past five years, I have designed and delivered SaaS platforms, e-commerce websites, dashboards, real-time systems, and mobile applications across various industries. My primary focus is creating clean, intuitive, and fully responsive digital experiences that align with business goals and user expectations.
               </motion.p>
               
               <motion.p
@@ -135,16 +135,7 @@ const About = () => {
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.8 }}
               >
-                My primary focus is creating clean, intuitive, and responsive digital experiences that align with business objectives and user needs. I work closely with stakeholders to transform requirements into well-structured web and mobile interfaces.
-              </motion.p>
-              
-              <motion.p
-                className="text-sm sm:text-base text-white/70 leading-relaxed font-light"
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : {}}
-                transition={{ delay: 0.9 }}
-              >
-                I believe effective design balances usability, clarity, and visual impact. By following modern design standards and best practices, I deliver consistent, accessible, and user-centered design solutions.
+                I collaborate closely with stakeholders, developers, and product teams to transform business requirements into structured wireframes, interactive prototypes, and high-fidelity interfaces. My design approach is grounded in usability principles, accessibility standards, and modern UI trends to ensure scalable and consistent solutions. I believe great design balances usability, clarity, and visual impact. By combining user-centered design thinking with practical development knowledge, I create meaningful digital experiences that drive engagement and business growth.
               </motion.p>
             </div>
 
