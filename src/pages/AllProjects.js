@@ -7,11 +7,14 @@ import LuxyArchitectureImg from '../assets/projects/figma/Luxy Architecture/luxu
 import MarvelImg from '../assets/projects/figma/Marvel/marvel.jpg';
 import CarWashImg from '../assets/projects/figma/The Best Care Car Wash/car wash website.jpg';
 import ParcelServiceImg from '../assets/projects/figma/Parcel Service/parcel service.jpg';
+import RealEstateWebImg from '../assets/projects/figma/Real Estate Web/real easte web.jpg';
 // Figma Projects - MOBILE
 import FarmMobileUIImg from '../assets/projects/figma/Farm Mobile UI/farmmobile.jpg';
 import CarMobileUIImg from '../assets/projects/figma/Car Mobile UI/carmobile.jpeg';
 // Figma Projects - ECOMMERCE
 import EcoEcommerceImg from '../assets/projects/figma/Eco E-Commerce/eco e commerce.jpg';
+import ExclusiveEcommerceImg from '../assets/projects/figma/Exclusive Ecommerce Web/exclusive e comerce web.avif';
+import ClothEcommerceImg from '../assets/projects/figma/Cloth Ecommerce Site/cloth ecommerce site.jpg';
 // Figma Projects - ANIMATION
 import CharacterAnimationImg from '../assets/projects/figma/Character Animation/charactor animation.jpg';
 import CoffeeAnimationImg from '../assets/projects/figma/Coffee Animation/coffee.jpeg';
@@ -80,6 +83,15 @@ const AllProjects = ({ onBack }) => {
       tags: ['Product', 'Logistics', 'Conversion'],
       url: 'https://www.behance.net/gallery/240376249/Parcel-Service',
     },
+    {
+      id: 'fig-6a',
+      title: 'Real Estate Web',
+      category: 'Figma',
+      image: RealEstateWebImg,
+      description: 'Modern real estate platform with property listings and interactive features.',
+      tags: ['Web Design', 'Real Estate', 'Platform'],
+      url: 'https://www.behance.net/gallery/245191323/Real-Estate-Web-Platform',
+    },
     // MOBILE Projects
     {
       id: 'fig-7',
@@ -108,6 +120,24 @@ const AllProjects = ({ onBack }) => {
       description: 'Nature-inspired shopfront with modular product tiles and soft neutrals.',
       tags: ['E-Commerce', 'UI/UX', 'Sustainable'],
       url: 'https://www.behance.net/gallery/240376127/Eco-e-commerce',
+    },
+    {
+      id: 'fig-9a',
+      title: 'Exclusive Ecommerce Web',
+      category: 'Figma',
+      image: ExclusiveEcommerceImg,
+      description: 'Premium e-commerce platform with elegant design and seamless shopping experience.',
+      tags: ['E-Commerce', 'UI/UX', 'Premium'],
+      url: 'https://www.behance.net/gallery/243874685/E-commerce',
+    },
+    {
+      id: 'fig-9b',
+      title: 'Cloth Ecommerce Site',
+      category: 'Figma',
+      image: ClothEcommerceImg,
+      description: 'Fashion e-commerce website with modern design and intuitive product browsing.',
+      tags: ['E-Commerce', 'Fashion', 'UI/UX'],
+      url: 'https://www.behance.net/gallery/243448987/Cloth-ecommerce-site',
     },
     // ANIMATION Projects
     {

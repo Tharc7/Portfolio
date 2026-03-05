@@ -34,6 +34,7 @@ const Projects = ({ onViewAll }) => {
       projects: [
         { title: 'Luxy Architecture', url: 'https://www.behance.net/gallery/242984587/Luxy-Architecture-Web-UI' },
         { title: 'Clothing Brand', url: 'https://www.behance.net/gallery/243052229/Clothing-Brand' },
+        { title: 'Real Estate Web', url: 'https://www.behance.net/gallery/245191323/Real-Estate-Web-Platform' },
       ],
       url: 'https://www.behance.net/gallery/242984587/Luxy-Architecture-Web-UI',
     },
@@ -61,6 +62,8 @@ const Projects = ({ onViewAll }) => {
       image: EcoEcommerceImg,
       projects: [
         { title: 'Eco E-Commerce', url: 'https://www.behance.net/gallery/240376127/Eco-e-commerce' },
+        { title: 'Exclusive Ecommerce Web', url: 'https://www.behance.net/gallery/243874685/E-commerce' },
+        { title: 'Cloth Ecommerce Site', url: 'https://www.behance.net/gallery/243448987/Cloth-ecommerce-site' },
       ],
       url: 'https://www.behance.net/gallery/240376127/Eco-e-commerce',
     },
